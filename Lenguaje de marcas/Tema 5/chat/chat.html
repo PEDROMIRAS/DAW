@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <!-- Ventana flotante con credenciales de prueba -->
+    <div id="userInfo">
+        <h3>Usuarios de prueba</h3>
+        <ul>
+            <li><strong>Usuario:</strong> pmpc@ | <strong>Contraseña:</strong> 1234</li>
+            <li><strong>Usuario:</strong> marti@ | <strong>Contraseña:</strong> 4321</li>
+        </ul>
+    </div>
+    
+    <!-- Login pop-up -->
+    <dialog id="dialogLogin" open>
+        <form method="dialog">
+            <p>
+                <label for="user">Usuario:</label>
+                <input type="text" id="user" placeholder="Ingresa tu usuario">
+            </p>
+            <p>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Ingresa tu contraseña">
+            </p>
+            <menu>
+                <button id="cancel" type="reset">Cancelar</button>
+                <button id="submit">Confirmar</button>
+            </menu>
+        </form>
+    </dialog>
+
+    <!-- Chat -->
+    <div id="chat">
+        <div id="chatContainer">
+            <div id="chatHeader">Chat</div>
+            <div id="chatBody">
+                <div id="chatOutput"></div>
+            </div>
+            <div id="chatInputContainer">
+                <input type="text" id="chatInput" placeholder="Escribe un mensaje...">
+                <button id="chatButton">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

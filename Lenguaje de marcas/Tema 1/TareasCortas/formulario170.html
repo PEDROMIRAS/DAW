@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Centrado</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        form {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <fieldset>
+            <label for="usuario">Usuario: <input type="text" placeholder="Escribe tu usuario"></label><br><br>
+            <label for="contraseña">Contraseña: <input type="password" placeholder="Escribe tu contraseña"></label>
+        </fieldset><br>
+        <label for="email">Email: <input type="email" placeholder="correo@empresa.com"></label><br><br>
+        <label for="asunto">Asunto: <textarea></textarea></label><br><br>
+        <label for="pregunta">¿Cómo nos has conocido?<br>
+            <input type="checkbox"> Un amigo 
+            <input type="checkbox"> Googleando 
+            <input type="checkbox"> Buzoneo 
+            <input type="checkbox"> Otros
+        </label><br><br>
+        <label for="mensaje">Escribe tu mensaje:<br> 
+            <textarea></textarea>
+        </label><br><br>
+        <label>
+            <input type="checkbox" name="terminos"> He leído y acepto el 
+            <a href="">aviso legal y la política de privacidad</a>
+        </label><br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+  
+</body>
+</html>

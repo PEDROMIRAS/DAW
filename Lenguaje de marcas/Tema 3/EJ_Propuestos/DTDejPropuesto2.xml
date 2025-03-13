@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="propuesto.css"?>
+<!DOCTYPE peliculas [
+    <!ELEMENT peliculas (pelicula+)>
+    <!ELEMENT pelicula (titulo, director, anio, duracion, genero, reparto, productora, presupuesto, recaudacion)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT director (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT duracion (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT reparto (actor+)>
+    <!ELEMENT actor (#PCDATA)>
+    <!ELEMENT productora (#PCDATA)>
+    <!ELEMENT presupuesto (#PCDATA)>
+    <!ELEMENT recaudacion (#PCDATA)>
+]>
+<peliculas>
+    <pelicula>
+        <titulo>Transformers</titulo>
+        <director>Michael Bay</director>
+        <anio>2007</anio>
+        <duracion>143</duracion>
+        <genero>Ciencia Ficcion y Accion</genero>
+        <reparto>
+            <actor>Shia LaBeouf</actor>
+            <actor>Megan Fox</actor>
+            <actor>Tyrese Gibson</actor>
+        </reparto>
+        <productora>DreamWorks Pictures Hasbro</productora>
+        <presupuesto>150000000 USD</presupuesto>
+        <recaudacion>709709780 USD</recaudacion>
+    </pelicula>
+    <pelicula>
+        <titulo>Piratas del Caribe: La Maldicion de la Perla Negra</titulo>
+        <director>Gore Verbinski</director>
+        <anio>2003</anio>
+        <duracion>143</duracion>
+        <genero>Accion Aventuras Comedia Capa y Espada</genero>
+        <reparto>
+            <actor>Johnny Depp</actor>
+            <actor>Zoe Saldaña</actor>
+            <actor>Orlando Bloom</actor>
+        </reparto>
+        <productora>Walt Disney Pictures</productora>
+        <presupuesto>140.000.000 USD</presupuesto>
+        <recaudacion>654.264.015 USD</recaudacion>
+    </pelicula>
+</peliculas>

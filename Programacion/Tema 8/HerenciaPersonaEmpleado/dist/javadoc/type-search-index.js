@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"herenciapersonaempleado","l":"Cliente"},{"p":"herenciapersonaempleado","l":"Empleado"},{"p":"herenciapersonaempleado","l":"HerenciaPersonaEmpleado"},{"p":"AnimalesEjemplo","l":"PruebaClase"}];updateSearchResults();

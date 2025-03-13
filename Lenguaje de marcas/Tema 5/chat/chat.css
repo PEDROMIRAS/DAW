@@ -1,0 +1,148 @@
+/* Reset básico */
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos del diálogo (Login) */
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+dialog input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+menu button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cancel {
+    background-color: #aaa;
+    color: white;
+}
+
+#submit {
+    background-color: #527854;
+    color: white;
+}
+#chat{
+    display:none;
+}
+
+/* Contenedor del Chat */
+#chatContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: 500px;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;  /* Se organiza en columna */
+}
+
+/* Header del Chat */
+#chatHeader {
+    background-color: #527854;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+/* Cuerpo del Chat */
+#chatBody {
+    flex: 1;  /* Hace que el chat body ocupe el espacio disponible */
+    padding: 10px;
+    overflow-y: auto;  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input y Botón dentro del Chat */
+#chatInputContainer {
+    display: flex;
+    border-top: 1px solid #527854;
+    padding: 10px;
+    background: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#chatInput {
+    flex: 1; /*Hace que el input ocupe el espacio disponible*/
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chatButton {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #527854;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#chatButton:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para la ventana flotante */
+#userInfo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+#userInfo h3 {
+    margin: 0 0 10px 0;
+}
+#userInfo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#userInfo li {
+    margin-bottom: 5px;
+}

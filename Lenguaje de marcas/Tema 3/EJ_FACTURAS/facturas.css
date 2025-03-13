@@ -1,0 +1,143 @@
+/* Contenedor general */
+SuministroLRFacturasEmitidas {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Cada factura */
+RegistroLRFacturasEmitidas {
+    display: block;
+    width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #000;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado de la factura */
+IDFactura {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+
+IDFactura::before {
+    content: "Factura Nº: ";
+    font-weight: bold;
+    color: #000;
+}
+
+/* Número de Factura */
+NumSerieFacturaEmisor {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 5px;
+}
+
+NumSerieFacturaEmisor::before {
+    content: "Número de Factura: ";
+    font-weight: bold;
+    color: #333;
+}
+
+/* Fecha de la Factura */
+FechaExpedicionFacturaEmisor {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+FechaExpedicionFacturaEmisor::before {
+    content: "Fecha de la Fra.: ";
+    font-weight: bold;
+    color: #333;
+}
+
+/* Destinatario */
+Contraparte {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+
+Contraparte::before {
+    content: "Destinatario: ";
+    font-weight: bold;
+    color: #000;
+}
+
+/* Importe Total */
+ImporteTotal {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #d32f2f;
+    text-align: right;
+    padding-top: 10px;
+    border-top: 2px solid #000;
+}
+
+ImporteTotal::before {
+    content: "Importe Total: ";
+    font-weight: bold;
+    color: #333;
+}
+
+/* Datos de IVA o exención */
+DetalleIVA, DetalleExenta {
+    display: block;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+DetalleIVA::before, DetalleExenta::before {
+    content: "Detalle Impuestos: ";
+    font-weight: bold;
+    color: #000;
+}
+
+/* Base Imponible */
+BaseImponible {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+BaseImponible::before {
+    content: "Base Imponible: ";
+    font-weight: bold;
+    color: #555;
+}
+
+/* Cuota Repercutida (si hay IVA) */
+CuotaRepercutida {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+CuotaRepercutida::before {
+    content: "IVA Repercutido: ";
+    font-weight: bold;
+    color: #333;
+}

@@ -1,0 +1,58 @@
+/* Estilo general del documento */
+hardwareCatalog {
+    display:table;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Encabezado de la tabla */
+header {
+    display: table-row;
+    font-weight: bold;
+    background-color: #ddd;
+    text-align: center;
+}
+
+col {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Cada elemento "item" se convierte en una fila */
+item {
+    display: table-row;
+    text-align: center;
+}
+
+/* Cada campo dentro de un "item" se convierte en una celda */
+id, categoria, marca, modelo, especificaciones {
+    display: table-cell;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Estilos personalizados */
+id {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+categoria {
+    color: blue;
+}
+
+marca {
+    color: green;
+}
+
+modelo {
+    color: purple;
+}
+
+especificaciones {
+    font-style: italic;
+}

@@ -1,0 +1,20 @@
+<tabla>
+        <alumno>
+                <nro_expediente>125</nro_expediente>
+                <nombre>Nayely Estefania</nombre>
+                <apellido>Barahona</apellido>
+                <curso>1DAW</curso>
+        </alumno>
+        <alumno>
+                <nro_expediente>321</nro_expediente>
+                <nombre>Mohcin</nombre>
+                <apellido>Bensaadoun</apellido>
+                <curso>1DAW</curso>
+        </alumno>
+        <alumno>
+                <nro_expediente>415</nro_expediente>
+                <nombre>Victor Angel</nombre>
+                <apellido>Bermejo</apellido>
+                <curso>1DAW</curso>
+        </alumno>
+</tabla>

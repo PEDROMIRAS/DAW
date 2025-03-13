@@ -1,0 +1,57 @@
+*{
+    font-family: Arial;
+}
+div {
+    border: 1px solid gray;
+    padding: 6px 10px;
+};
+
+.numerico {
+    background-color : rgb(128,128,0);
+    margin : 4px 10px;
+    color : rgb(0,128,128); 
+}
+.operacion {
+    background-color : rgb(0,128,128);
+    margin : 4px 10px;
+    color : white;
+}
+
+.numerico,.operacion {
+    font-size : 1.5em;
+    padding: 10px;
+    margin : 6px 12px;
+    width  : 50px;
+    height : 50px;
+    border: 1px solid gray;		
+    border-radius: 5px;					
+}
+
+#historial{
+    font-size : 1.5em;
+    color: white;
+    width : 130px;
+    height : 50px;
+    padding: 10px;
+    margin : 6px 12px;
+    border: 1px solid gray;		
+    border-radius: 5px;	
+    background-color : rgb(0,128,128);
+}
+#maquina{
+    width : 340px;
+    background-color : rgb(232,232,180);
+    margin:0 auto;
+    border-radius: 5px;			
+}
+
+#visor{
+    padding : 3px;
+    font-size : 2em;
+    width : 90%;
+    height : 50px;
+    background-color : rgb(180,232,180);
+    margin:0 auto;
+    border: 2px solid gray;		
+    border-radius: 6px;			
+}

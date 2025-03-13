@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Estilo del header y footer */
+        header, footer {
+            background-color: black;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Estilo de títulos */
+        h1, h3 {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Contenedor general */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Divs individuales */
+        div, iframe, audio {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contenedor de imágenes */
+        .image-container {
+            flex: 1 1 calc(50% - 20px);
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Estilo de iframe (videos y mapas) */
+        iframe {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            aspect-ratio: 16 / 9; /* Mantiene una proporción */
+        }
+
+        /* Responsive para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .image-container {
+                flex: 1 1 100%;
+            }
+
+            iframe {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Página de Medios en HTML</h1></header>
+
+    <h3>UNA IMAGEN</h3>
+    <div class="container">
+        <div class="image-container">
+            <img src="../PaginaHOBBY/B9B0E65F-D910-44A5-BF63-82CBAF1E4060_1_105_c.jpeg" alt="Foto Pedro">
+        </div>
+    </div>
+
+    <h3>UN AUDIO</h3>
+    <div class="container">
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+           
+        </audio>
+    </div>
+
+    <h3>UN VIDEO</h3>
+    <div class="container">
+        <iframe src="https://www.youtube.com/embed/qW7YlGVPLHM?si=hJ71XHgw69Acr46s" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <h3>UN MAPA</h3>
+    <div class="container"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35253.652766339095!2d-1.697526976957162!3d37.67078098840022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd64e6511f1164a3%3A0x73375f59b7e46aef!2sCastillo%20de%20Lorca%20-%20Fortaleza%20Del%20Sol!5e1!3m2!1ses!2ses!4v1732808226044!5m2!1ses!2ses" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+    </div>
+
+    <footer>
+        <p>© 2024 Página de Medios</p>
+    </footer>
+</body>
+</html>

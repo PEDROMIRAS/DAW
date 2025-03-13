@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="centromedico.css"?>
+<!DOCTYPE panel [
+    <!ELEMENT panel (nombreCentro, fecha, consultas)>
+    <!ELEMENT nombreCentro (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT consultas (consulta+)>
+    <!ELEMENT consulta (companiaPrivada?, horaAsignada, horaLlamada, tiempoEspera)>
+    <!ATTLIST consulta codigo ID #REQUIRED>
+    <!ATTLIST consulta estado (C | O | D) "O">
+    <!ELEMENT companiaPrivada EMPTY>
+    <!ATTLIST companiaPrivada nombre CDATA #REQUIRED>
+    <!ELEMENT horaAsignada (#PCDATA)>
+    <!ELEMENT horaLlamada (#PCDATA)>
+    <!ELEMENT tiempoEspera (#PCDATA)>
+]>
+<panel>
+    <nombreCentro>CENTRO MEDICO SALUS INFIRMORUM (CSMI)</nombreCentro>
+    <fecha>23-03-2024</fecha>
+    <consultas>
+     <!-- Encabezado de la tabla -->
+        <consulta codigo="HEADER">
+            <companiaPrivada nombre="Compañía Privada"/>
+            <horaAsignada>Hora Asignada</horaAsignada>
+            <horaLlamada>Hora Llamada</horaLlamada>
+            <tiempoEspera>Tiempo de Espera</tiempoEspera>
+        </consulta>
+    <!-- Tabla  de consultas medicas -->
+        <consulta codigo="EDC05" estado="O">
+            <horaAsignada>9:05</horaAsignada>
+            <horaLlamada>9:07</horaLlamada>
+            <tiempoEspera>2 m</tiempoEspera>
+        </consulta>
+        <consulta codigo="WEV07" estado="D">
+            <companiaPrivada nombre="NHS"/>
+            <horaAsignada>10:00</horaAsignada>
+            <horaLlamada>10:30</horaLlamada>
+            <tiempoEspera>30 m</tiempoEspera>
+        </consulta>
+    </consultas>
+</panel>

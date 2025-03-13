@@ -1,0 +1,32 @@
+/* Estilos CSS */
+peliculas {
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding: 20px;
+    margin: 50px;
+    display: grid;
+}
+pelicula {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+titulo{
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+director{
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+reparto{
+    font-size: 14px;
+    color: #777;
+}

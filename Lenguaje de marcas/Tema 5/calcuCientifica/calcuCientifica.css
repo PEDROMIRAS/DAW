@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.calculadora {
+    background: grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+}
+
+.pantalla {
+    width: 94%;
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    background-color: #f9f9f9;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.boton {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: rgb(43, 43, 49);
+}
+
+.boton.operador {
+    background-color: #151bc0;
+}
+
+.boton.operador:hover {
+    background-color: #172270;
+}
+
+.boton.limpiar {
+    background-color: #dc3545;
+}
+
+.boton.limpiar:hover {
+    background-color: #7c0e13;
+}
+
+/* Estilos para botones científicos */
+.boton.operador[data-valor="^"],
+.boton.operador[data-valor="sqrt"],
+.boton.operador[data-valor="log"],
+.boton.operador[data-valor="pi"],
+.boton.operador[data-valor="sin"],
+.boton.operador[data-valor="cos"],
+.boton.operador[data-valor="tan"],
+.boton.operador[data-valor="factorial"] {
+    background-color: #ffa500;
+    color: black;
+    font-weight: bold;
+}
+
+.boton.operador[data-valor="^"]:hover,
+.boton.operador[data-valor="sqrt"]:hover,
+.boton.operador[data-valor="log"]:hover,
+.boton.operador[data-valor="pi"]:hover,
+.boton.operador[data-valor="sin"]:hover,
+.boton.operador[data-valor="cos"]:hover,
+.boton.operador[data-valor="tan"]:hover,
+.boton.operador[data-valor="factorial"]:hover {
+    background-color: #cc8400;
+}

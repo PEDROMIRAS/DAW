@@ -1,0 +1,70 @@
+/* Estilos generales */
+panel {
+    display: block;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Estilo del título del centro médico */
+nombreCentro {
+    margin-top: 20px;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Fecha */
+fecha {
+    display: block;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la tabla */
+consultas {
+    display: table;
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+/* Filas de la tabla */
+consulta {
+    display: table-row;
+   
+}
+
+/* Asegurar que cada consulta tenga el mismo número de celdas */
+consulta:has(companiaPrivada) {
+    display: table-row;
+    text-align: center;
+}
+
+companiaPrivada::before {
+    content: attr(nombre);
+    display: table-cell;
+    padding: 8px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Para consultas sin compañía privada, agregar una celda vacía */
+consulta:not(:has(companiaPrivada))::before {
+    content: "NO";
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px;
+}
+/* Celdas de la tabla */
+horaAsignada, horaLlamada, tiempoEspera ,companiaPrivada {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* Estilo para la fila de encabezado */
+consulta[codigo="HEADER"] {
+    font-weight: bold;
+    background-color: #ddd;
+}

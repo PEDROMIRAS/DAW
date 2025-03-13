@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="facturas.css" type="text/css"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:siiLR="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/es/aeat/ssii/fact/ws/SuministroLR.xsd"
+xmlns:sii="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/es/aeat/ssii/fact/ws/SuministroInformacion.xsd">
+<soapenv:Header/>
+<soapenv:Body>
+<siiLR:SuministroLRFacturasEmitidas>
+<sii:Cabecera>
+<sii:IDVersionSii>1.1</sii:IDVersionSii>
+<sii:Titular>
+<sii:NombreRazon>LABORATORIOS ANTONIO LLAMAS SL</sii:NombreRazon>
+<sii:NIF>B73557081</sii:NIF>
+</sii:Titular>
+<sii:TipoComunicacion>A0</sii:TipoComunicacion>
+</sii:Cabecera>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25000040</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>21/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>7916.39</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>LABORATORIOS ADMIRA SL</sii:NombreRazon>
+               <sii:NIF>B86079191</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>6542.47</sii:BaseImponible>
+                <sii:CuotaRepercutida>1373.91</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25I00007</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>21/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>3680.00</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>ZINZINO OPERATIONS AB - SUECIA</sii:NombreRazon>
+                <sii:IDOtro>
+                  <sii:CodigoPais>SE</sii:CodigoPais>
+                  <sii:IDType>02</sii:IDType>
+                  <sii:ID>SE556655265801</sii:ID>
+                </sii:IDOtro>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:Exenta>
+	          <sii:DetalleExenta>
+	            <sii:CausaExencion>E5</sii:CausaExencion>
+	            <sii:BaseImponible>3680.00</sii:BaseImponible>
+	          </sii:DetalleExenta>
+	        </sii:Exenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25I00006</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>21/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>740.00</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>ZINZINO OPERATIONS AB - POLONIA</sii:NombreRazon>
+                <sii:IDOtro>
+                  <sii:CodigoPais>SE</sii:CodigoPais>
+                  <sii:IDType>02</sii:IDType>
+                  <sii:ID>PL5263367516</sii:ID>
+                </sii:IDOtro>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:Exenta>
+	          <sii:DetalleExenta>
+	            <sii:CausaExencion>E5</sii:CausaExencion>
+	            <sii:BaseImponible>740.00</sii:BaseImponible>
+	          </sii:DetalleExenta>
+	        </sii:Exenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25I00005</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>21/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>3378.00</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>ZINZINO OPERATIONS AB - FRANCIA</sii:NombreRazon>
+                <sii:IDOtro>
+                  <sii:CodigoPais>SE</sii:CodigoPais>
+                  <sii:IDType>02</sii:IDType>
+                  <sii:ID>FR24904519766</sii:ID>
+                </sii:IDOtro>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:Exenta>
+	          <sii:DetalleExenta>
+	            <sii:CausaExencion>E5</sii:CausaExencion>
+	            <sii:BaseImponible>3378.00</sii:BaseImponible>
+	          </sii:DetalleExenta>
+	        </sii:Exenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25000039</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>21/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>9536.95</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>RIOJA NATURE PHARMA, S.L.</sii:NombreRazon>
+               <sii:NIF>B26430918</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>7881.77</sii:BaseImponible>
+                <sii:CuotaRepercutida>1655.17</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100038</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>-251.56</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:108274</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>UMBRELLA FLAVOURS &#38; FUNCTIONAL INGRED., SL</sii:NombreRazon>
+               <sii:NIF>B65876351</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>-207.90</sii:BaseImponible>
+                <sii:CuotaRepercutida>-43.65</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25R00005</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>-84.70</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>NEOVITAL HEALTH SL</sii:NombreRazon>
+               <sii:NIF>B65340580</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>-70.00</sii:BaseImponible>
+                <sii:CuotaRepercutida>-14.70</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100040</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>3968.20</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>HARINERA MEDITERRANEA, S.A.</sii:NombreRazon>
+               <sii:NIF>A30602833</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>3279.50</sii:BaseImponible>
+                <sii:CuotaRepercutida>688.69</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100039</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>1222.58</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>VOTUM WORLD, S.L.L.</sii:NombreRazon>
+               <sii:NIF>B42853929</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>1010.40</sii:BaseImponible>
+                <sii:CuotaRepercutida>212.18</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100034</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>7708.42</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>NUTRINOVEX SPORT INNOVATIONS S.L</sii:NombreRazon>
+               <sii:NIF>B12841474</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>6370.59</sii:BaseImponible>
+                <sii:CuotaRepercutida>1337.82</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100031</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>7277.42</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>NECTARAN, S.L.</sii:NombreRazon>
+               <sii:NIF>B80933914</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>6014.40</sii:BaseImponible>
+                <sii:CuotaRepercutida>1263.02</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100032</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>12936.00</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:PC216064-1</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>EMICELA, S.A.</sii:NombreRazon>
+               <sii:NIF>A35081785</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:Exenta>
+	          <sii:DetalleExenta>
+	            <sii:CausaExencion>E1</sii:CausaExencion>
+	            <sii:BaseImponible>12936.00</sii:BaseImponible>
+	          </sii:DetalleExenta>
+	        </sii:Exenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100033</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>3408.14</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>EBIOTEC - EUROESPES BIOTECNOLOG&#205;A S. A.</sii:NombreRazon>
+               <sii:NIF>A15781917</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>2816.64</sii:BaseImponible>
+                <sii:CuotaRepercutida>591.49</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100037</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>4791.89</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>UMBRELLA FLAVOURS &#38; FUNCTIONAL INGRED., SL</sii:NombreRazon>
+               <sii:NIF>B65876351</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>3960.24</sii:BaseImponible>
+                <sii:CuotaRepercutida>831.65</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100035</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>8479.42</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>NUTRINOVEX SPORT INNOVATIONS S.L</sii:NombreRazon>
+               <sii:NIF>B12841474</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>7007.78</sii:BaseImponible>
+                <sii:CuotaRepercutida>1471.63</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100036</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>24/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>1604.01</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>SURIVAN FEEL THE TASTE, S.L.</sii:NombreRazon>
+               <sii:NIF>B73790347</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>1325.63</sii:BaseImponible>
+                <sii:CuotaRepercutida>278.38</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25100041</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>25/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>13977.05</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref: ASF224PC0987</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>DADELOS AGROSOLUTIONS SL</sii:NombreRazon>
+               <sii:NIF>B98669310</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>11551.28</sii:BaseImponible>
+                <sii:CuotaRepercutida>2425.76</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25M00021</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>27/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>4707.27</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>MERCADONA S.A.</sii:NombreRazon>
+               <sii:NIF>A46103834</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>3890.30</sii:BaseImponible>
+                <sii:CuotaRepercutida>816.96</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25M00022</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>27/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>4707.27</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>MERCADONA S.A.</sii:NombreRazon>
+               <sii:NIF>A46103834</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>3890.30</sii:BaseImponible>
+                <sii:CuotaRepercutida>816.96</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25M00023</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>27/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>4707.27</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>MERCADONA S.A.</sii:NombreRazon>
+               <sii:NIF>A46103834</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>3890.30</sii:BaseImponible>
+                <sii:CuotaRepercutida>816.96</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+<siiLR:RegistroLRFacturasEmitidas>
+ <sii:PeriodoLiquidacion>
+	 <sii:Ejercicio>2025</sii:Ejercicio>
+	 <sii:Periodo>02</sii:Periodo>
+	</sii:PeriodoLiquidacion>
+ <siiLR:IDFactura>
+	<sii:IDEmisorFactura>
+		<sii:NIF>B73587081</sii:NIF>
+	</sii:IDEmisorFactura>
+	<sii:NumSerieFacturaEmisor>25M00024</sii:NumSerieFacturaEmisor>
+	<sii:FechaExpedicionFacturaEmisor>27/02/2025</sii:FechaExpedicionFacturaEmisor>
+ </siiLR:IDFactura>
+ <siiLR:FacturaExpedida>
+	<sii:TipoFactura>F1</sii:TipoFactura>
+	<sii:ClaveRegimenEspecialOTrascendencia>01</sii:ClaveRegimenEspecialOTrascendencia>
+	<sii:ImporteTotal>4707.27</sii:ImporteTotal>
+	<sii:DescripcionOperacion>Venta s/ref:</sii:DescripcionOperacion>
+	<sii:Contraparte>
+	  <sii:NombreRazon>MERCADONA S.A.</sii:NombreRazon>
+               <sii:NIF>A46103834</sii:NIF>
+	</sii:Contraparte>
+	<sii:TipoDesglose>  
+	  <sii:DesgloseFactura>
+		<sii:Sujeta>
+	        <sii:NoExenta>
+	          <sii:TipoNoExenta>S1</sii:TipoNoExenta>
+	          <sii:DesgloseIVA>
+	            <sii:DetalleIVA>
+                <sii:TipoImpositivo>21</sii:TipoImpositivo>
+                <sii:BaseImponible>3890.30</sii:BaseImponible>
+                <sii:CuotaRepercutida>816.96</sii:CuotaRepercutida>
+	            </sii:DetalleIVA>
+	          </sii:DesgloseIVA>
+	        </sii:NoExenta>
+		</sii:Sujeta>
+	  </sii:DesgloseFactura>
+    </sii:TipoDesglose>
+ </siiLR:FacturaExpedida>
+</siiLR:RegistroLRFacturasEmitidas>
+  </siiLR:SuministroLRFacturasEmitidas>
+ </soapenv:Body>
+</soapenv:Envelope>

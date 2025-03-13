@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="propuesto2.css"?>
+<hardwareCatalog>
+    <header>
+        <col>ID</col>
+        <col>Categoría</col>
+        <col>Marca</col>
+        <col>Modelo</col>
+        <col>Especificaciones</col>
+    </header>
+    <item>
+        <id>1</id>
+        <categoria>Procesador</categoria>
+        <marca>Intel</marca>
+        <modelo>Core i7 7700K</modelo>
+        <especificaciones>4.2 GHz, 4 núcleos, 8 hilos</especificaciones>
+    </item>
+    <item>
+        <id>2</id>
+        <categoria>Memoria RAM</categoria>
+        <marca>Corsair</marca>
+        <modelo>Vengeance LPX 16GB</modelo>
+        <especificaciones>DDR4 3000 MHz</especificaciones>
+    </item>
+    <item>
+        <id>3</id>
+        <categoria>Tarjeta Gráfica</categoria>
+        <marca>Nvidia</marca>
+        <modelo>GeForce GTX 1080</modelo>
+        <especificaciones>8GB GDDR5X</especificaciones>
+    </item>
+    <item>
+        <id>4</id>
+        <categoria>Disco Duro</categoria>
+        <marca>Western Digital</marca>
+        <modelo>WD Blue 1TB</modelo>
+        <especificaciones>SATA, 7200 RPM</especificaciones>
+    </item>
+    <item>
+        <id>5</id>
+        <categoria>Placa Base</categoria>
+        <marca>Asus</marca>
+        <modelo>ROG STRIX Z270E GAMING</modelo>
+        <especificaciones>Socket 1151, DDR4</especificaciones>
+    </item>
+</hardwareCatalog>

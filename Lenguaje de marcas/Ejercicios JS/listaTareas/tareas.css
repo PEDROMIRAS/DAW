@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#contenedorTareas {
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff; 
+}
+
+h1 {
+  text-align: center;
+}
+
+.contenedorEntrada {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: skyblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: darkcyan;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.botonEliminar {
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botonEliminar:hover {
+  background-color: orangered;
+}
+
+#botonTema {
+  display: block;
+  margin: 10px auto; /* Centra horizontalmente */
+  text-align: center;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode #contenedorTareas {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.dark-mode button {
+  background-color: #555;
+}
+
+.dark-mode button:hover {
+  background-color: #777;
+}
+
+.dark-mode .botonEliminar {
+  background-color: #d9534f;
+}
+
+.dark-mode .botonEliminar:hover {
+  background-color: #c9302c;
+}

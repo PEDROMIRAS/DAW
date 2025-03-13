@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<miclase>
+    <nro_aula>3.2.6</nro_aula>
+    <bloque>3</bloque>
+    <planta>2</planta>
+    <aula>6</aula>
+    <aforo>35</aforo>
+    <alumnos>
+        <alumno>
+            <nombre>Pedro</nombre>
+            <apellido>Garcia</apellido>
+            <nre>123456789</nre>
+            <dni>12345678A</dni>
+            <correo>123456789@gmail.com</correo>
+            <direccion>C/Lorca</direccion>
+        </alumno>
+    </alumnos>
+    <alumnos>
+        <alumno>
+            <nombre>Juan</nombre>
+            <apellido>Martinez</apellido>
+            <nre>98765432</nre>
+            <dni>3256323B</dni>
+            <correo>golaqtal@gmail.com</correo>
+            <direccion>C/Murcia</direccion>
+        </alumno>
+    </alumnos>
+    <ordenadores>
+        <ordenador>
+            <marca>HP</marca>
+            <modelo>Probook</modelo>
+            <ram>8GB</ram>
+            <disco>500GB</disco>
+            <procesador>Intel i5</procesador>
+        </ordenador>
+        <ordenador>
+            <marca>Asus</marca>
+            <modelo>ROG</modelo>
+            <ram>16GB</ram>
+            <disco>1TB</disco>
+            <procesador>Intel i7</procesador>
+        </ordenador>
+    </ordenadores>
+</miclase>

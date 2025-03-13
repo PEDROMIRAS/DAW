@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2</title>
+  <link rel="stylesheet" href="styloBoton.css">
+</head>
+<body>
+  <button id="alertButton">Mostrar Alerta</button>
+  <button id="infoButton">Mostrar Informacion</button>
+  <button id="errorButton">Mostrar Error</button>
+  <script>
+    document.getElementById('alertButton').addEventListener('click', function() {
+      console.log('Esta es una alerta.');
+    });
+    document.getElementById('infoButton').addEventListener('click', function() {
+      console.info('Esta es una información.');
+    });
+    document.getElementById('errorButton').addEventListener('click', function() {
+      console.error('Esto es un error.');
+    });
+  </script>
+</body>
+</html>
