@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<universidad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="estudiantes.xsd">
+    <estudiante>
+        <nombre>Carlos</nombre>
+        <apellido>Alonso</apellido>
+        <edad>22</edad>
+        <carrera>Informática</carrera>
+    </estudiante>
+    <estudiante>
+        <nombre>María</nombre>
+        <apellido>García</apellido>
+        <edad>21</edad>
+        <carrera>Telecomunicaciones</carrera>
+    </estudiante>
+    <estudiante>
+        <nombre>Juan</nombre>
+        <apellido>Pérez</apellido>
+        <edad>23</edad>
+        <carrera>Mecanica</carrera>
+    </estudiante>
+</universidad>    

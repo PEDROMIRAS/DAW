@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml-stylesheet type="text/css" href="propuesto.css"?>
+<?xml-stylesheet type="text/css" href="peliculas.css"?>
 <!DOCTYPE peliculas [
     <!ELEMENT peliculas (pelicula+)>
     <!ELEMENT pelicula (titulo, director, anio, duracion, genero, reparto, productora, presupuesto, recaudacion)>
