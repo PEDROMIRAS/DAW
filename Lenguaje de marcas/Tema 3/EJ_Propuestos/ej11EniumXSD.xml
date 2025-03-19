@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+    <libro>
+        <titulo>El Quijote</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <precio>20</precio>
+    </libro>
+    <libro>
+        <titulo>El lazarillo de Tormes</titulo>
+        <autor>Anónimo</autor>
+        <precio>10</precio>
+    </libro>
+</libreria>
