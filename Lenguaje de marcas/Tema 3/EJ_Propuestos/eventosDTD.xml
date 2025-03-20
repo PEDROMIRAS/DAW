@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE eventos [
+  <!ELEMENT eventos (evento+)>
+  <!ELEMENT evento (titulo, descripcion, fecha, ubicacion, invitados?)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT descripcion (#PCDATA)>
+  <!ELEMENT fecha (#PCDATA)>
+  <!ELEMENT ubicacion (#PCDATA)>
+  <!ELEMENT invitados (invitado+)>
+  <!ELEMENT invitado (#PCDATA)>
+]>
+<eventos>
+  <evento>
+    <titulo>Conferencia de Diseño Web</titulo>
+    <descripcion>Una conferencia para diseñadores web</descripcion>
+    <fecha>2023-10-15</fecha>
+    <ubicacion>Centro de Convenciones</ubicacion>
+    <invitados>
+      <invitado>Andrea Lluch</invitado>
+      <invitado>Jorge Juan Oliva</invitado>
+    </invitados>
+  </evento>
+  <evento>
+    <titulo>Taller de Programación</titulo>
+    <descripcion>Un taller práctico sobre programación</descripcion>
+    <fecha>2023-11-02</fecha>
+    <ubicacion>IES Severo Ochoa</ubicacion>
+  </evento>
+</eventos>

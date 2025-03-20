@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE store [
+    <!ELEMENT store (product*)>
+    <!ELEMENT product (name, price, category)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT category (#PCDATA)>
+    <!ENTITY phone "Phone">
+    <!ENTITY tablet "Tablet">
+    <!ENTITY laptop "Laptop">
+]>
+<store>
+ <product>
+   <name>iPhone 13</name>
+   <price>999.99</price>
+   <category>&phone;</category>
+ </product>
+ <product>
+   <name>iPad Air</name>
+   <price>599.99</price>
+   <category>&tablet;</category>
+ </product>
+ <product>
+   <name>MacBook Pro</name>
+   <price>1999.99</price>
+   <category>&laptop;</category>
+ </product>
+</store>

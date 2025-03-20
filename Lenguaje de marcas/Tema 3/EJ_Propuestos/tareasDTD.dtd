@@ -1,0 +1,8 @@
+  <!ELEMENT tareas (tarea+)>
+  <!ELEMENT tarea (titulo, descripcion, fecha, prioridad, subtareas?)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT descripcion (#PCDATA)>
+  <!ELEMENT fecha (#PCDATA)>
+  <!ELEMENT prioridad (#PCDATA)>
+  <!ELEMENT subtareas (tarea+)>
+  <!ATTLIST tarea id ID #REQUIRED>
