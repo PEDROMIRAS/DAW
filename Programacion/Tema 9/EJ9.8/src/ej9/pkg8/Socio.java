@@ -27,6 +27,6 @@ public class Socio implements Comparable{
 
     @Override
     public int compareTo(Object o) {
-        return id - ((Socio) o).id;
+        return nombre.compareTo(((Socio) o).nombre);
     }
 }
