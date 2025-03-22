@@ -21,7 +21,7 @@ public class PublicacionTexto extends PublicacionBase{
     public void mostrarDetalles() {
         System.out.println("Autor: " + obtenerAutor()); 
         System.out.println("Tipo publicacion: TEXTO");
-        System.out.println("Conetenido : " + this.contenido);
+        System.out.println("Contenido : " + this.contenido);
     }
     
     @Override

@@ -22,7 +22,6 @@ public class PublicacionVideo extends PublicacionBase implements PublicacionConM
     public void mostrarDetalles() {
         System.out.println("Autor: " + obtenerAutor());
         System.out.println("Tipo de publiacion: VIDEO");
-        System.out.println("Reacciones: " + this.reacciones);
     }
 
     @Override
@@ -32,9 +31,9 @@ public class PublicacionVideo extends PublicacionBase implements PublicacionConM
 
     @Override
     public void reaccionar(String reaccion) {
-        System.out.println(reaccion);
         this.reacciones++;
-        //System.out.println("Numero de reacciones: " +this.reacciones);
+        System.out.println("Nueva reaccion: \"" + reaccion + "\"");
+        System.out.println("Numero de reacciones: " +this.reacciones);
     }
     
     @Override

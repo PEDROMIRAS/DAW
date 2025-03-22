@@ -48,7 +48,7 @@ public class EJ3 {
        System.out.println("----------------------------------------------------\n");
        
        //Contenido multimedia videos
-       System.out.println("-Mostar contenido multimedia videos:");
+       System.out.println("-Mostrar contenido multimedia videos:");
        v1.mostrarMultimedia();
        v2.mostrarMultimedia();
        
@@ -57,30 +57,26 @@ public class EJ3 {
        //Agregar reaccion a video
        System.out.println("-Reaccionando videos: ");
        v1.reaccionar("Que pasada de moto!!");
+        System.out.println();
        v2.reaccionar("Menudo paisaje!!");
+        System.out.println();
+       v1.reaccionar("Tremenda moto!!");
        
        System.out.println("\n----------------------------------------------------\n");
        
        //Editar publiaciones
-       System.out.println("-Edicion de publiaciones: ");
-       t1.editarPublicacion("Caperucita Roja");
-       t2.editarPublicacion("Pedro y el lobo");
+       System.out.println("-Edicion de publicaciones: ");
+       t1.editarPublicacion("Caperucita Roja.");
+       t2.editarPublicacion("Pedro y el lobo.");
        i1.editarPublicacion("ejemplo.com/imagenes/montania.jpg");
        i2.editarPublicacion("ejemplo.com/imagenes/moto-scooter.jpg");
-       v1.editarPublicacion("ejemplo.com/videos/lamborgini-huracan-evo.mp4");
+       v1.editarPublicacion("ejemplo.com/videos/lamborghini-huracan-evo.mp4");
        v2.editarPublicacion("ejemplo.com/videos/montania-nevada.mp4");
        
        System.out.println("\n----------------------------------------------------\n");
        
        //Total publiaciones creadas
-       System.out.println("-Total publiaciones: " + PublicacionBase.getTotalPublicaciones() + "\n" );
-       
-//     System.out.println("\n----------------------------------------------------\n");
-//       
-//     //Publiaciones Alice y Bob
-//     System.out.println();
-//     alice.mostrarPublicaciones();
-//     bob.mostrarPublicaciones();
+       System.out.println("-Total publicaciones: " + PublicacionBase.getTotalPublicaciones() + "\n" );
        
     }
     

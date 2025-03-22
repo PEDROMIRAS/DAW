@@ -14,26 +14,27 @@ public class Futbolista implements Comparable{
     protected int edad;
     private int numGoles;
 
-    public Futbolista(String dni, String nombre, int edad) {
+    public Futbolista(String dni, String nombre, int edad, int numGoles) {
         this.dni = dni;
         this.nombre = nombre;
         this.edad = edad;
-        this.numGoles = 0;
+        this.numGoles = numGoles;
+        //this.numGoles = 0;
     }
     
-    public  int getNumGoles(){
-        return this.numGoles;
-    }
-    
-    public void aumentarGoles(int goles){
-        this.numGoles += goles;
-    }
+//    public  int getNumGoles(){
+//        return this.numGoles;
+//    }
+//    
+//    public void aumentarGoles(int goles){
+//        this.numGoles += goles;
+//    }
     
     @Override
     public String toString(){
         
         return "\nInformacion Futbolista : \n DNI: "+ this.dni +", Nombre: " + this.nombre + 
-                ", Edad: " + this.edad + ", Numero de goles: " + getNumGoles();
+                ", Edad: " + this.edad + ", Numero de goles: " + this.numGoles;
         
 //        return "\nInformacion:\nDNI: " + this.dni + 
 //               "\nNombre: " + this.nombre + 

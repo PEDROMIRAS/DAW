@@ -29,7 +29,7 @@ public class Usuario {
     }
     
     public void mostrarPublicaciones(){
-        System.out.println("Publicaciones de " + this.nombre + ":");
+        System.out.println("*Publicaciones de " + this.nombre + ":");
 
         if (publicaciones.length == 0) {
             System.out.println("  - No tiene publicaciones.");
