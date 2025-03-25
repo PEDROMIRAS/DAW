@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idiomas>
+    <idioma nombre = "Castellano" pais="España" poblacion = "43"/>
+    <idioma nombre ="Frances" pais="Francia" poblacion = "60"/>
+    <idioma nombre ="Aleman" pais="Alemania" poblacion = "80"/>
+    <idioma nombre ="Vasco" pais="España" poblacion = "2"/>
+    <idioma nombre ="Valenciano" pais="España" poblacion = "2"/>
+    <idioma nombre ="Mallorquin" pais="España" poblacion = "1"/>
+    <idioma nombre ="Gallego" pais="España" poblacion = "3"/>
+    <idioma nombre ="Bretón" pais="Francia" poblacion = "1"/>
+    <idioma nombre ="Sórano" pais="Alemania" poblacion = "1"/>
+</idiomas>
