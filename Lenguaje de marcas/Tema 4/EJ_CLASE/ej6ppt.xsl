@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
+    <html>
         <table version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <tr>
                 <th>Posicion</th>
@@ -25,5 +26,6 @@
                 </tr>
             </xsl:for-each-group>
         </table>
+    </html>
     </xsl:template>
 </xsl:stylesheet>
