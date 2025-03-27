@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados>
+    <empleado>
+        <nombre>Javier García</nombre>
+        <salario>5000</salario>
+    </empleado>
+    <empleado>
+        <nombre>Marta López</nombre>
+        <salario>7000</salario>
+    </empleado>
+    <empleado>
+        <nombre>Alejandro Martínez</nombre>
+        <salario>4000</salario>
+    </empleado>
+</empleados>

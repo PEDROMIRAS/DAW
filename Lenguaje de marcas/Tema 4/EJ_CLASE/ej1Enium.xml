@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clase>
+<estudiante>
+    <nombre>Javier García</nombre>
+    <calificacion>85</calificacion>
+</estudiante>
+<estudiante>
+    <nombre>Marta López</nombre>
+    <calificacion>75</calificacion>
+</estudiante>
+<estudiante>
+    <nombre>Alejandro Martínez</nombre>
+    <calificacion>90</calificacion>
+</estudiante>
+<estudiante>
+    <nombre>Isabel González</nombre>
+    <calificacion>60</calificacion>
+</estudiante>
+</clase>
