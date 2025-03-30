@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stock>
+    <producto codigo="S01">
+    <peso unidad="kg">2</peso>
+        <nombre>Server</nombre>
+        <lugar edificio="C">
+            <aula>C14</aula>
+        </lugar>
+    </producto>
+    <producto codigo="T02">
+    <peso unidad='g'>500</peso>
+        <nombre>Switch</nombre>
+        <lugar edificio="A">
+            <aula>A23</aula>
+        </lugar>
+    </producto>
+    <producto codigo="F04">
+    <peso unidad='Hg'>4</peso>
+        <nombre>Rack Mount</nombre>
+        <lugar edificio="A">
+            <aula>A23</aula>
+        </lugar>
+    </producto>
+</stock>
