@@ -15,7 +15,7 @@
         </lugar>
     </producto>
     <producto codigo="F04">
-    <peso unidad='Hg'>4</peso>
+    <peso unidad='kg'>4</peso>
         <nombre>Rack Mount</nombre>
         <lugar edificio="A">
             <aula>A23</aula>
