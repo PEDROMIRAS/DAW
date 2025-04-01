@@ -4,11 +4,11 @@
         <html>
             <body>
                 <!--Nombres de productos en aula C14 -->
-                <h3>Productos en aula C14</h3>
+                <h3>Productos en edificio C</h3>
                 <xsl:for-each select="producto">
-                    <xsl:if test="lugar/aula='C14'">
+                    <xsl:if test="lugar/@edificio='C'">
                         <p>
-                            Nombre : <xsl:value-of select="nombre"/>
+                            Nombre: <xsl:value-of select="nombre"/>
                         </p>
                     </xsl:if>
                 </xsl:for-each>
