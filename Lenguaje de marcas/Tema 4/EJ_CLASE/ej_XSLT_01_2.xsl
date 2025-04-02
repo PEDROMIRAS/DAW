@@ -4,7 +4,7 @@
         <html>
             <body>
                 <h1><xsl:value-of select="@nombre"/></h1>
-                <p>Pagina Web: <a><xsl:value-of select="@web"/></p>
+                <p>Pagina Web: <a href="{@web}"><xsl:value-of select="@web"/></a></p>
                 <ul>
                 <xsl:apply-templates select="ciclos/ciclo"/>
                 </ul>
