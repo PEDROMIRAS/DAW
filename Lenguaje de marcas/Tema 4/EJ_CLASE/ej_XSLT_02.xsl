@@ -6,7 +6,7 @@
         <!-- Encabezados CSV -->
         <xsl:text>Nombre del ciclo,Grado,Año del título,Aforo alumnado&#10;</xsl:text>
 
-        <!-- Iterar sobre los ciclos -->
+        <!-- Aplicar sobre los ciclos -->
         <xsl:apply-templates select="ciclos/ciclo"/>
     </xsl:template>
 
