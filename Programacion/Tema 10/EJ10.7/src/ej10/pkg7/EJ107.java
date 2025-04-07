@@ -36,18 +36,22 @@ public class EJ107 {
         int contEdad = 0;
         double sumaAltura = 0;
         int contAltura = 0;
+        //int cont=0;
         
         try (BufferedReader bf = new BufferedReader(new FileReader(ruta))) {
             String linea;
             
             while ((linea = bf.readLine()) != null) {
+
                 // Leer nombre, edad y altura
                 try (Scanner sc = new Scanner(linea)) {
+
                     // Cambiar el Locale a uno que use el punto como separador decimal
                     sc.useLocale(Locale.US); // Cambia a Locale.GERMANY si necesitas usar coma
                     
                     // Leer nombre, edad y altura
                     String nombre = sc.next();
+
                     if (sc.hasNextInt()) {
                         sumaEdad += sc.nextInt();
                         contEdad++;
@@ -62,11 +66,23 @@ public class EJ107 {
                 }
             }
             
+//            while((linea = bf.readLine()) != null){
+//                Scanner sc = new Scanner(linea);
+//                sc.useLocale(Locale.US);
+//                
+//                String nombre = sc.next();
+//                sumaEdad+= sc.nextInt();
+//                sumaAltura+=sc.nextDouble();
+//                cont++;
+//                
+//                System.out.println("Nombre: " +nombre);
+//            }
+            
             // Calcular y mostrar la media de la edad y altura
-            double mediaEdad = (double) sumaEdad / contEdad;
+            double mediaEdad = (double) sumaEdad / contEdad/*cont*/;
             System.out.println("Media edad: " + mediaEdad);
             
-            double mediaAltura = sumaAltura / contAltura;
+            double mediaAltura = sumaAltura / contAltura /*cont*/;
             System.out.println("Media altura: " + mediaAltura);
             
         } catch (IOException e) {
