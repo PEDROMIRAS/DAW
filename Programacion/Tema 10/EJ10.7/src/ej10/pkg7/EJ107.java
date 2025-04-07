@@ -7,6 +7,7 @@ package ej10.pkg7;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Locale;
 import java.util.Scanner;
 
 /***
@@ -42,16 +43,19 @@ public class EJ107 {
             while ((linea = bf.readLine()) != null) {
                 // Leer nombre, edad y altura
                 try (Scanner sc = new Scanner(linea)) {
+                    // Cambiar el Locale a uno que use el punto como separador decimal
+                    sc.useLocale(Locale.US); // Cambia a Locale.GERMANY si necesitas usar coma
+                    
                     // Leer nombre, edad y altura
                     String nombre = sc.next();
                     if (sc.hasNextInt()) {
                         sumaEdad += sc.nextInt();
                         contEdad++;
+                        
                        if (sc.hasNextDouble()) {
                         sumaAltura += sc.nextDouble();
                         contAltura++;
                        }
-                        
                     }
                     // Mostrar el nombre
                     System.out.println("Nombre: "+ nombre);
