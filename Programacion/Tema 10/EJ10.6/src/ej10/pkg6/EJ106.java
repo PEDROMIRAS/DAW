@@ -44,10 +44,10 @@ public class EJ106 {
                 }
                
             }
-         int media = suma/cont;
-            bf.close();
-            System.out.println("Suma total: " + suma);
-            System.out.println("Media: "+ media);
+        int media = suma/cont;
+        bf.close();
+        System.out.println("Suma total: " + suma);
+        System.out.println("Media: "+ media);
 
         } catch (IOException e) {
             System.out.println("Error al leer el archivo: " + e.getMessage());
