@@ -27,23 +27,24 @@ public class EJ1010 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String ruta1 = "texto.txt";
-        String ruta2 = "copia_de_texto.txt";
-        
-        try(BufferedReader bf = new BufferedReader(new FileReader(ruta1));
-                BufferedWriter bw = new BufferedWriter(new FileWriter(ruta2))){
-            String texto = null;
-            while((texto = bf.readLine()) != null){
-                try(Scanner sc = new Scanner(texto)){
-                    texto = sc.nextLine();
-                }
-                
-                bw.write(texto);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Introduce el nombre del archivo a copiar: ");
+        String nombreArchivo = sc.nextLine();
+        String copiaArchivo = "copia_de_" + nombreArchivo;
+
+        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo));
+             BufferedWriter bw = new BufferedWriter(new FileWriter(copiaArchivo))) {
+
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                bw.write(linea);
                 bw.newLine();
             }
-        } catch (IOException ex) {
-            System.out.println("Error: " + ex);
+
+            System.out.println("El archivo ha sido copiado correctamente como: " + copiaArchivo);
+        } catch (IOException e) {
+            System.out.println("Ha ocurrido un error: " + e.getMessage());
         }
-    }
+    } 
     
 }
