@@ -37,7 +37,7 @@ public class EJ2 {
                 // Recorremos la linea y si es un caracter en la posicion de i iteramos sobre el contador
                 for (int i = 0; i < linea.length(); i++) {
                     if (linea.charAt(i) != ' ') {
-                    numChar++;
+                        numChar++;
                     }
                 }
                 // Dividimos la linea en uno o mas espacios y contamos los elementos(palabras) en el array resultante
