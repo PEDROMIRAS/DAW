@@ -1,1 +1,5 @@
-Fecha            Temperatura Maxima              Temperatura Minima
+2020-09-22   24   13
+2000-07-08   41   18
+2025-06-21   45   19
+2025-02-17   17   -2
+2021-06-23   47   20
