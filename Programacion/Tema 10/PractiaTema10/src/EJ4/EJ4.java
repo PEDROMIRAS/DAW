@@ -81,10 +81,10 @@ public class EJ4 {
                 System.out.println(linea);
                 hayDatos = true; // Se detectó al menos un registro válido
 
-                // Divide la línea en partes separadas por espacios (se eliminan los espacios al inicio y al final)
+                // Divide la linea en partes separadas por espacios (se eliminan los espacios al inicio y al final)
                 String[] partes = linea.trim().split("\\s+");
 
-                // Si la línea tiene exactamente 3 partes: fecha, tempMax, tempMin
+                // Si la linea tiene exactamente 3 partes: fecha, tempMax, tempMin
                 if (partes.length == 3) {
                     try {
                         // Solo se usan las temperaturas para calcular maximos y minimos
