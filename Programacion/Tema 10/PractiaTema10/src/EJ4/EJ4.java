@@ -5,7 +5,7 @@
 
 package EJ4;
 
-import java.io.BufferedReader;     // Para leer archivos línea por línea
+import java.io.BufferedReader;     // Para leer archivos linea por linea
 import java.io.BufferedWriter;     // Para escribir en archivos
 import java.io.FileReader;         // Lectura de archivos
 import java.io.FileWriter;         // Escritura de archivos
@@ -23,7 +23,7 @@ public class EJ4 {
     // Scanner global para leer datos por consola
     static Scanner scanner = new Scanner(System.in);
 
-    // Método para registrar una nueva temperatura en el archivo
+    // Metodo para registrar una nueva temperatura en el archivo
     public static void registrarTemperatura() {
         // Abre el archivo en modo append (agregar al final sin borrar lo anterior)
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(ARCHIVO, true))) {
@@ -31,17 +31,18 @@ public class EJ4 {
             System.out.print("\nIntroduce la fecha (YYYY-MM-DD): ");
             String fecha = scanner.nextLine();
 
-            // Pide temperatura máxima
+            // Pide temperatura maxima
             System.out.print("Introduce la temperatura maxima: ");
             int tempMax = Integer.parseInt(scanner.nextLine());
 
-            // Pide temperatura mínima
+            // Pide temperatura minima
             System.out.print("Introduce la temperatura minima: ");
             int tempMin = Integer.parseInt(scanner.nextLine());
 
             // Escribe los datos separados por espacios en el archivo
-            bw.write(fecha + "   " + tempMax + "   " + tempMin);
-            bw.newLine(); // Inserta salto de línea después del registro
+            bw.write(fecha + "               " + tempMax + "                       " + tempMin);// a lo bruto 
+            //bw.write(String.format("%-20s%-30d%-30d\n", fecha, tempMax, tempMin)); // con el formateador que no se porque no va bien
+            bw.newLine(); // Inserta salto de linea despues del registro
 
             System.out.println("\nRegistro guardado correctamente.");
         } catch (IOException ex) {
@@ -50,54 +51,60 @@ public class EJ4 {
         }
     }
 
-    // Método para mostrar el historial de temperaturas
+    // Metodo para mostrar el historial de temperaturas
     public static void mostrarHistorial() {
-        // Variables para guardar la temperatura máxima y mínima encontradas
+        // Variables para guardar la temperatura maxima y minima encontradas
         int minTempMin = Integer.MAX_VALUE;
         int maxTempMax = Integer.MIN_VALUE;
-        boolean hayDatos = false; // Bandera para saber si hay datos
+        boolean hayDatos = false; // Boolean para saber si hay datos
 
         System.out.println("\nHistorial de temperaturas:");
 
-        // Imprime cabecera de la tabla
-        System.out.printf("%-12s %-20s %-20s\n", "Fecha", "Temperatura maxima", "Temperatura minima");
-
-        // Intenta leer el archivo línea por línea
+        // Intenta leer el archivo linea por linea
         try (BufferedReader br = new BufferedReader(new FileReader(ARCHIVO))) {
             String linea;
+            boolean cabeceraMostrada = false;
 
-            // Lee cada línea del archivo
+            // Lee cada linea del archivo
             while ((linea = br.readLine()) != null) {
-                if (linea.trim().isEmpty()) continue; // Ignora líneas vacías
+                // Si la lnea contiene "fecha" o "temperatura", se asume que es la cabecera
+                if (linea.toLowerCase().contains("fecha") || linea.toLowerCase().contains("temperatura")) {
+                    // Solo mostrar la cabecera una vez
+                    if (!cabeceraMostrada) {
+                        System.out.println(linea);
+                        cabeceraMostrada = true;
+                    }
+                    continue; // Saltar esta linea para que no entre en el procesamiento de datos
+                }
 
-                hayDatos = true; // Se encontró al menos un registro
+                // Imprime la linea tal como aparece en el archivo
+                System.out.println(linea);
+                hayDatos = true; // Se detectó al menos un registro válido
 
-                // Divide la línea por espacios
+                // Divide la línea en partes separadas por espacios (se eliminan los espacios al inicio y al final)
                 String[] partes = linea.trim().split("\\s+");
 
-                // Si hay exactamente 3 elementos (fecha, max, min)
+                // Si la línea tiene exactamente 3 partes: fecha, tempMax, tempMin
                 if (partes.length == 3) {
                     try {
-                        String fecha = partes[0];                    // Fecha
-                        int tempMax = Integer.parseInt(partes[1]);   // Temperatura máxima
-                        int tempMin = Integer.parseInt(partes[2]);   // Temperatura mínima
+                        // Solo se usan las temperaturas para calcular maximos y minimos
+                        int tempMax = Integer.parseInt(partes[1]); // Temperatura maxima
+                        int tempMin = Integer.parseInt(partes[2]); // Temperatura minima
 
-                        // Imprime el registro en formato tabla
-                        System.out.printf("%-12s%10d%21d\n", fecha, tempMax, tempMin);
-
-                        // Actualiza máximos y mínimos globales
+                        // Actualiza los valores extremos
                         if (tempMax > maxTempMax) maxTempMax = tempMax;
                         if (tempMin < minTempMin) minTempMin = tempMin;
+
                     } catch (NumberFormatException e) {
-                        // Si los datos no son válidos, se avisa
+                        // Si los numeros no son validos, se avisa
                         System.out.println("Línea con datos inválidos: " + linea);
                     }
                 }
             }
 
-            // Si no hubo ningún dato válido
+            // Si no hay datos de fechas y temperaturas
             if (!hayDatos) {
-                System.out.println("No hay registros aún.");
+                System.out.println("No hay registros aun.");
             } else {
                 // Imprime resumen de extremos
                 System.out.println("\nTemperatura maxima registrada: " + maxTempMax);
@@ -110,13 +117,13 @@ public class EJ4 {
         }
     }
 
-    // Método principal que muestra el menú y gestiona todo
+    // Metodo principal que muestra el menu y gestiona todo
     public static void main(String[] args) {
         int opcion;
 
         // Bucle que se repite hasta que el usuario elige salir
         do {
-            // Muestra el menú
+            // Muestra el menu
             System.out.println("\n------------- Menu -------------");
             System.out.println("1. Registrar nueva temperatura");
             System.out.println("2. Mostrar historial de registros");
@@ -124,12 +131,12 @@ public class EJ4 {
             System.out.print("Elige una opcion: ");
             opcion = Integer.parseInt(scanner.nextLine());
 
-            // Selección de opción del menú
+            // Seleccion de opcion del menu
             switch (opcion) {
-                case 1 -> registrarTemperatura(); // Opción 1: registrar temperatura
-                case 2 -> mostrarHistorial();     // Opción 2: mostrar historial
+                case 1 -> registrarTemperatura(); // Opcion 1: registrar temperatura
+                case 2 -> mostrarHistorial();     // Opcion 2: mostrar historial
                 case 3 -> System.out.println("\nSaliendo del programa..."); // Salida
-                default -> System.out.println("Opción no válida."); // Si no es válida
+                default -> System.out.println("Opción no válida."); // Si no es valida
             }
 
         } while (opcion != 3); // Se repite mientras no elija salir
