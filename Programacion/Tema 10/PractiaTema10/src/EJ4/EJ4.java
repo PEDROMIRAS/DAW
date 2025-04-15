@@ -41,7 +41,6 @@ public class EJ4 {
 
             // Escribe los datos separados por espacios en el archivo
             bw.write(fecha + "               " + tempMax + "                       " + tempMin);// a lo bruto 
-            //bw.write(String.format("%-20s%-30d%-30d\n", fecha, tempMax, tempMin)); // con el formateador que no se porque no va bien
             bw.newLine(); // Inserta salto de linea despues del registro
 
             System.out.println("\nRegistro guardado correctamente.");
