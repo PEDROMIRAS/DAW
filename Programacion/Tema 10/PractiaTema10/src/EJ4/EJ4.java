@@ -4,7 +4,25 @@
  */
 
 package EJ4;
-
+/***
+* EJERCICIO 4
+* Implementa una aplicación que mantenga un registro de las temperaturas máxima y mínima
+* diarias medidas en una estación meteorológica. Los datos se guardarán en un archivo de texto
+* con el siguiente formato:
+* 
+* Fecha         Temperatura máxima    Temperatura mínima
+* 2020-01-15           12                    -1
+* 2020-01-16           15                     2
+* 
+* Al arrancar la aplicación aparecerá un menú con las opciones:
+* --------------MENU-------------
+* 1. Registrar nueva temperatura
+* 2. Mostrar historial de registros
+* 3. Salir
+* 
+* El historial de registros mostrará todos los datos registrados junto con el máximo valor de las
+* temperaturas máximas y el mínimo de las temperaturas mínimas.
+*/
 import java.io.BufferedReader;     // Para leer archivos linea por linea
 import java.io.BufferedWriter;     // Para escribir en archivos
 import java.io.FileReader;         // Lectura de archivos
@@ -40,7 +58,7 @@ public class EJ4 {
             int tempMin = Integer.parseInt(scanner.nextLine());
 
             // Escribe los datos separados por espacios en el archivo
-            bw.write(fecha + "               " + tempMax + "                       " + tempMin);// a lo bruto 
+            bw.write(fecha + "               " + tempMax + "                       " + tempMin); // a lo bruto con espacios contados
             bw.newLine(); // Inserta salto de linea despues del registro
 
             System.out.println("\nRegistro guardado correctamente.");
@@ -76,12 +94,12 @@ public class EJ4 {
                     continue; // Saltar esta linea para que no entre en el procesamiento de datos
                 }
 
-                // Imprime la linea tal como aparece en el archivo
+                // Imprime la linea como aparece en el archivo
                 System.out.println(linea);
-                hayDatos = true; // Se detectó al menos un registro válido
+                hayDatos = true; // Se detecto al menos un registro valido
 
                 // Divide la linea en partes separadas por espacios (se eliminan los espacios al inicio y al final)
-                String[] partes = linea.trim().split("\\s+");
+                String[] partes = linea.trim().split("\\s+");// .trim() elimina los espacios al principio y al final
 
                 // Si la linea tiene exactamente 3 partes: fecha, tempMax, tempMin
                 if (partes.length == 3) {
