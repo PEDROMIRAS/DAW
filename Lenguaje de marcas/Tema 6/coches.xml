@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<condesionario>
+    <coche combustible="D">
+        <marca>Volkswagen</marca>
+        <modelo>Passat</modelo>
+        <color>Azul</color>
+        <año>2018</año>
+        <precio>15000</precio>
+    </coche>
+    <coche ombustible="G">
+        <marca>Ford</marca>
+        <modelo>Focus</modelo>
+        <color>Rojo</color>
+        <año>2019</año>
+        <precio>18000</precio>
+    </coche>
+    <coche ombustible="D">
+        <marca>Toyota</marca>
+        <modelo>Corolla</modelo>
+        <color>Blanco</color>
+        <año>2020</año>
+        <precio>20000</precio>
+    </coche>
+</condesionario>
