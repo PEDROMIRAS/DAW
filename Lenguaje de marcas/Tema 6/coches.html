@@ -23,7 +23,7 @@
                     var nodos = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
                     var resultado = nodos.iterateNext();
                     while (resultado) {
-                        fatos = datos + "marca: " + resultado.childNodes[0].nodeValue + "<br>";
+                        datos = datos + "marca: " + resultado.childNodes[0].nodeValue + "<br>";
                         resultado = nodos.iterateNext();
                     }
                 }
