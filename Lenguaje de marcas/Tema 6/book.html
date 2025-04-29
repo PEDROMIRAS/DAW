@@ -18,7 +18,7 @@
 
             function recuperaDatos(xml) {
                 var datos = " ";
-                path = " /catalog/book/title[text()]";
+                path = " /catalog/book/title";
                 if(xml.evaluate){
                     var nodos = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
                     var resultado = nodos.iterateNext();
