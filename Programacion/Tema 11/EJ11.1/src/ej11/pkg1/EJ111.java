@@ -25,10 +25,10 @@ public class EJ111 {
         String ruta = "datos.dat";
         int[] enteros = {0,1,2,3,4,5,6,7,8,9};
         try(ObjectOutputStream oS = new ObjectOutputStream(new FileOutputStream(ruta))){
-            for (int i = 0; i < enteros.length; i++) {
-                oS.writeInt(i);
-            }
-            //oS.writeObject(enteros);
+//            for (int i = 0; i < enteros.length; i++) {
+//                oS.writeInt(i);
+//            }
+            oS.writeObject(enteros);
             /***
              * Al heredar la clase String de la clase Object, un string se 
              * contempla como tal y se puede usar el writeObject
