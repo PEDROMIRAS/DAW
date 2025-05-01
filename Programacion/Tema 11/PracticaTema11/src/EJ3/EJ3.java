@@ -20,6 +20,11 @@ import java.util.Scanner;
 * el libro de firmas o insertar un nuevo nombre (comprobando que no se encuentre
 * repetido) usando el fichero binario firmas.dat.
 */
+/***
+ * Crear dos funciones para manejar mejor un menu en la aplicacion
+ * Para leer las firmas crear un array para guardar los nombres cargados en el 
+ * readObject de ObjectInputStream 
+ */
 /**
  *
  * @author pedromiras
