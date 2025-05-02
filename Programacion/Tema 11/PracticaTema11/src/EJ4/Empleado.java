@@ -10,11 +10,15 @@ import java.io.Serializable;
  *
  * @author pedromiras
  */
+
+//Emplamos Serializable para poder pasar a datos binarios
 public class Empleado implements Serializable{
+    //Datos necesarios para crear un empleado
     public String dni;
     public String nombre;
     public double sueldo;
-
+    
+    //Constructor de la clase empleado
     public Empleado(String dni, String nombre, double sueldo) {
         this.dni = dni;
         this.nombre = nombre;
@@ -31,6 +35,4 @@ public class Empleado implements Serializable{
         sb.append('}');
         return sb.toString();
     }
-    
-    
 }
