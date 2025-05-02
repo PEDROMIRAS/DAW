@@ -26,7 +26,11 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Scanner;
-
+/***
+ * Para manejar mejor el ejericicio vamos a crear funciones en la clase main que llamane
+ * a metodos de la clase a crear Lista, que a su vez hara uso de la clase Empleado
+ * La idea es manejar un menu con funcione
+ */
 /**
  *
  * @author pedromiras
@@ -34,9 +38,9 @@ import java.util.Scanner;
 public class EJ4 {
     static Scanner scanner = new Scanner(System.in);
     static String ruta = "empleados.dat";
-    static Lista lista = new Lista();//Creamos una lista para guardar objs
+    static Lista lista = new Lista();// Creamos una lista para guardar objs
     
-    //Funcion para cargar el archivo nada mas empezar el programa
+    // Funcion para cargar el archivo nada mas empezar el programa
     static void cargarArchivo(){
         /*-----Cargar la lista de empleados al inicar el programa-----*/
         try(ObjectInputStream oS = new ObjectInputStream(new FileInputStream(ruta))){
@@ -47,9 +51,9 @@ public class EJ4 {
         }
     }
     
-    //Funcion para dar de alta a un empleado
+    // Funcion para dar de alta a un empleado
     static void altaEmpleado(){
-        //Solicitamos los datos que requiere un empleado DNI,Nombre,Sueldo
+        // Solicitamos los datos que requiere un empleado DNI,Nombre,Sueldo
         System.out.println("Alta de empleado");
         System.out.print("Ingresar DNI:");
         String dni = scanner.nextLine();
@@ -60,20 +64,20 @@ public class EJ4 {
         System.out.printf("Ingresar sueldo:");
         double sueldo = scanner.nextDouble();
         scanner.nextLine(); // Limpia el buffer
-        //Creamos un nuevo empleado con los datos recogidos
+        // Creamos un nuevo empleado con los datos recogidos
         Empleado nuevo = new Empleado(dni,nombre,sueldo);
-        /*Llamamos al metodo agregar de la clase Lista que
-        añade el empeladoa a un array*/
+        /* Llamamos al metodo agregar de la clase Lista que
+        añade el empeladoa a un array */
         lista.agregar(nuevo);
     }
     
-    //Funcion que llama al metodo eliminarPorDNI de la clase lista
+    // Funcion que llama al metodo eliminarPorDNI de la clase lista
     static void bajaEmpleado(){
-        //Introducimos el DNI que se le pasa al metodo
+        // Introducimos el DNI que se le pasa al metodo
         System.out.print("Introduce el DNI del empleado a eliminar: ");
         String dni = scanner.nextLine();
-        /*El metodo devuelve un boolean por lo que podemos crear una
-          condicion para informar al usuario*/
+        /* El metodo devuelve un boolean por lo que podemos crear una
+          condicion para informar al usuario */
         boolean eliminado = lista.eliminarPorDNI(dni);
         if (eliminado) {
             System.out.println("Empleado eliminado correctamente.");
@@ -82,12 +86,12 @@ public class EJ4 {
         }
     }
     
-    //Funcion para mostrar empleado por DNI
+    // Funcion para mostrar empleado por DNI
     static void mostrarDatosEmpleado(){
-        //Ingresamos el DNI del empleado a buscar
+        // Ingresamos el DNI del empleado a buscar
         System.out.print("Introduce el DNI del empleado: ");
         String dni = scanner.nextLine();
-        //Llamamos al metodo buscarPorDNI que devuelve el empleado para mostrarlo
+        // Llamamos al metodo buscarPorDNI que devuelve el empleado para mostrarlo
         Empleado emp = lista.buscarPorDNI(dni);
         if (emp != null) {//Si no esta vacio mostramos el empleado
             System.out.println("Empleado encontrado: " + emp);
@@ -96,13 +100,13 @@ public class EJ4 {
         }
     }
     
-    //Funcion para listar todos los empleados de la lista
+    // Funcion para listar todos los empleados de la lista
     static void listarEmpleados(){
-        //Comprobamos si hay o no empleados registrados
+        // Comprobamos si hay o no empleados registrados
         if (lista.tamano() == 0) {
             System.out.println("La lista de empleados esta vacia.");
         }else{
-        //Mostramos los empleados 1 a 1 usando los metodos de la clase Lista
+        // Mostramos los empleados 1 a 1 usando los metodos de la clase Lista
             System.out.println("Lista de empleados:");
             for (int i = 0; i < lista.tamano(); i++) {
                 Empleado emp = (Empleado) lista.obtener(i);
@@ -111,10 +115,10 @@ public class EJ4 {
         }
     }
     
-    //Funcion para salir del programa y guardar el array modificado en el archivo
+    // Funcion para salir del programa y guardar el array modificado en el archivo
     static void salir(){
         try (ObjectOutputStream oS = new ObjectOutputStream(new FileOutputStream(ruta))) {
-            //Escribimos la lista modificada en empleados.dat
+            // Escribimos la lista modificada en empleados.dat
             oS.writeObject(lista);
             System.out.println("Empleados guardados correctamente. Saliendo...");
         } catch (IOException e) {
@@ -130,7 +134,7 @@ public class EJ4 {
         
         cargarArchivo();
         
-        //Menu de la aplicacion del banco
+        // Menu de la aplicacion del banco
         do {
             System.out.println("\n--------- Menu ---------");
             System.out.println("1. Alta empleado");
@@ -150,6 +154,6 @@ public class EJ4 {
                 case 5 -> salir();
                 default -> System.out.println("Opcion no valida.");
             }
-        } while (opcion != 5);// Sii se elige tres termina el programa
+        } while (opcion != 5);// Si se elige cinco termina el programa y guarda el archivo
     }
 }

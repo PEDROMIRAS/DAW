@@ -33,8 +33,9 @@ public class EJ3 {
     static String ruta = "firmas.dat";// Ruta del archivo
     static Scanner scanner = new Scanner(System.in);
     static String[] nombres = new String[0];// Array de nombres
-
-    static void leerLibroFirmas() {// Funcion para leer las firma de la lista
+    
+    // Funcion para leer las firma de la lista
+    static void leerLibroFirmas() {
         try (ObjectInputStream iS = new ObjectInputStream(new FileInputStream(ruta))) {
             nombres = (String[]) iS.readObject();//Cargamos la lista en un array si existe
             System.out.println("\nLista de firmas:");
@@ -49,8 +50,9 @@ public class EJ3 {
             System.out.println("Error al leer el archivo: " + e.getMessage());
         }
     }
-
-    static void registrarFirma() {//Funcion para registrar nuevos nombres 
+    
+    //Funcion para registrar nuevos nombres
+    static void registrarFirma() { 
         // Cargar nombres actuales del archivo (si existen)
         try (ObjectInputStream iS = new ObjectInputStream(new FileInputStream(ruta))) {
             nombres = (String[]) iS.readObject();
@@ -71,7 +73,8 @@ public class EJ3 {
                 break;
             }
         }
-
+        
+        //Condicional para insertar el nombre si no existe en la lista
         if (existe) {
             System.out.println("El nombre ya esta en la lista de firmas.");
         } else {
@@ -105,6 +108,6 @@ public class EJ3 {
                 case 3 -> System.out.println("Saliendo del programa...");
                 default -> System.out.println("Opcion no valida.");
             }
-        } while (opcion != 3);// Sii se elige tres termina el programa
+        } while (opcion != 3);// Si se elige tres termina el programa
     }
 }

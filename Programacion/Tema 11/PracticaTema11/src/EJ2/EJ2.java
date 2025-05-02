@@ -51,8 +51,9 @@ public class EJ2 {
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Error al leer el archivo: " + e.getMessage());
         }
-        //Variables para nuevos nombres insertados en el bucle do_while
+        //Variable para nuevos nombres insertados en el bucle do_while
         String nuevoNombre;
+        //Bucle que nos permite introducir nombres hasta introducir "fin"
         do {
             System.out.print("Inserte un nuevo nombre:");
             nuevoNombre = scanner.nextLine();//Recogemos el nuevo nombre o "fin"
