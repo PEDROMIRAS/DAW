@@ -27,9 +27,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Scanner;
 /***
- * Para manejar mejor el ejericicio vamos a crear funciones en la clase main que llamane
- * a metodos de la clase a crear Lista, que a su vez hara uso de la clase Empleado
- * La idea es manejar un menu con funcione
+ * Para manejar mejor el ejercicio vamos a crear funciones en la clase main que llame
+ * a metodos de la clase a crear Lista, que a su vez hara uso de la clase Empleado.
+ * La idea es manejar un menu con funciones que sea mas comodo y funcional.
  */
 /**
  *
