@@ -30,6 +30,7 @@ public class EJ1 {
         String rutaPares = "pares.dat";
         String rutaImpares = "impares.dat";
         
+        //Necesitaba crear un numeros.dat que contuviera numeros pares e impares
 //        try (ObjectOutputStream oS = new ObjectOutputStream(new FileOutputStream(rutaNum))) {
 //            int[] numeros = {1, 2, 3, 4, 5, 6, 7, 8};
 //            for (int n : numeros) {

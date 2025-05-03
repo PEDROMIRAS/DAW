@@ -132,6 +132,7 @@ public class EJ4 {
     public static void main(String[] args) {
         int opcion;
         
+        //Llamada a la funcion para leer el archivo al iniciar el programa
         cargarArchivo();
         
         // Menu de la aplicacion del banco
@@ -147,11 +148,11 @@ public class EJ4 {
             System.out.println();
 
             switch (opcion) {
-                case 1 -> altaEmpleado();// Llamada al metodo para agregarEmpleados
-                case 2 -> bajaEmpleado();// Llamada al metodo para eliminarEmpleados
-                case 3 -> mostrarDatosEmpleado(); 
-                case 4 -> listarEmpleados();
-                case 5 -> salir();
+                case 1 -> altaEmpleado();// Llamada a la funcion para agregarEmpleados
+                case 2 -> bajaEmpleado();// Llamada a la funcion para eliminarEmpleados
+                case 3 -> mostrarDatosEmpleado();// Llamada a la funcion para mostrar empleados por DNI
+                case 4 -> listarEmpleados();// Llamada a la funcion para mostrar todos los empleados
+                case 5 -> salir();// Llamada a la funcion para guardar el archivo actualizado y salir del programa
                 default -> System.out.println("Opcion no valida.");
             }
         } while (opcion != 5);// Si se elige cinco termina el programa y guarda el archivo
