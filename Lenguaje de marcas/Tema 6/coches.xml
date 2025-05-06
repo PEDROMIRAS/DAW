@@ -7,14 +7,14 @@
         <año>2018</año>
         <precio>15000</precio>
     </coche>
-    <coche ombustible="G">
+    <coche combustible="G">
         <marca>Ford</marca>
         <modelo>Focus</modelo>
         <color>Rojo</color>
         <año>2019</año>
         <precio>18000</precio>
     </coche>
-    <coche ombustible="D">
+    <coche combustible="D">
         <marca>Toyota</marca>
         <modelo>Corolla</modelo>
         <color>Blanco</color>
