@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+    <body>
+        <p id="listado"></p>
+        <script>
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    recuperaDatos(xhttp.responseXML);
+                }
+            };
+            xhttp.open("GET", "U6_ECen02_students.xml", true);
+            xhttp.send();
+
+            function recuperaDatos(xml) {
+                var path = "/students/student/grades/math";
+                var suma = 0;
+                var contador = 0;
+
+                if (xml.evaluate) {
+                    var nodos = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+                    var resultado = nodos.iterateNext();
+                    while (resultado) {
+                        var nota = parseFloat(resultado.textContent);
+                        suma += nota;
+                        contador++;
+                        resultado = nodos.iterateNext();
+                    }
+                }
+                // Calcular el promedio
+                var promedio = contador > 0 ? (suma / contador).toFixed(2) : "Sin datos";
+                document.getElementById("listado").innerHTML = "Promedio de Matemáticas: " + promedio;
+            }
+        </script>
+    </body>
+</html>
