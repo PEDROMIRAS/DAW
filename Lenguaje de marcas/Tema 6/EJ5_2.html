@@ -19,12 +19,12 @@
 
             function recuperaDatos(xml) {
                 var datos = " ";
-                path = "/students/student/name";
+                path = "/ies/modulos/modulo[nombre='Lenguajes de marcas y sistemas de gestión de información']/ciclo";
                 if(xml.evaluate){
                     var nodos = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
                     var resultado = nodos.iterateNext();
                     while (resultado) {
-                        datos = datos + "Title: " + resultado.childNodes[0].nodeValue + "<br>";
+                        datos = datos + "Ciclo: " + resultado.childNodes[0].nodeValue + "<br>";
                         resultado = nodos.iterateNext();
                     }
                 }

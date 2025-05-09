@@ -19,12 +19,12 @@
 
             function recuperaDatos(xml) {
                 var datos = " ";
-                path = "/students/student/name";
+                path = "/ies/ciclos/ciclo[grado='Superior']/@id";
                 if(xml.evaluate){
                     var nodos = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
                     var resultado = nodos.iterateNext();
                     while (resultado) {
-                        datos = datos + "Title: " + resultado.childNodes[0].nodeValue + "<br>";
+                        datos = datos + "Modulo: " + resultado.childNodes[0].nodeValue + "<br>";
                         resultado = nodos.iterateNext();
                     }
                 }
