@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <book>
+    <title>XML in Practice</title>
+    <author>Joe Marini</author>
+    <year>2002</year>
+    <price>39.95</price>
+  </book>
+  <book>
+    <title>Learning XPath</title>
+    <author>John Smith</author>
+    <year>2010</year>
+    <price>29.99</price>
+  </book>
+  <book>
+    <title>Advanced XML Techniques</title>
+    <author>Lisa Johnson</author>
+    <year>2015</year>
+    <price>49.99</price>
+  </book>
+</catalog>
