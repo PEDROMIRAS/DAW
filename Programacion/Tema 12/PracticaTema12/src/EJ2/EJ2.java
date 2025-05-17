@@ -12,6 +12,19 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 /**
+ * Ejercicio 2
+ * Muestra un listado con el nombre y la edad de los empleados cuya edad se 
+ * encuentra comprendida entre un valor maximo y un valor minimo, introducidos 
+ * por el usuario.
+ * 
+ * Pasos principales:
+ * 1. Solicitar edad minima y maxima.
+ * 2. Conectarse a la base de datos y preparar la consulta parametrizada.
+ * 3. Ejecutar la consulta y mostrar los resultados.
+ * 4. Manejar excepciones y cerrar recursos.
+ */
+
+/**
  *
  * @author pedromiras
  */
@@ -21,39 +34,56 @@ public class EJ2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // Credenciales y URL de conexión a MySQL
         String usr = "root";
         String pswd = "";
-        String url = "jdbc:mysql://localhost:3306/Empresa";
-        Connection con;
-        PreparedStatement pst;
-        ResultSet rs;
+        String url  = "jdbc:mysql://localhost:3306/Empresa";
+
+        // Objetos JDBC
+        Connection        con; // Conexión a la BD
+        PreparedStatement pst; // Sentencia preparada
+        ResultSet         rs;  // Resultado de la consulta
+
+        // Scanner para entrada de datos
         Scanner sc = new Scanner(System.in);
         
-        try{
+        try {
+            // 1. Conexion a la base de datos
             con = DriverManager.getConnection(url, usr, pswd);
-            String sql = "select nombre, edad from Empleados where edad between ? and ?";
+
+            // 2. Consulta parametrizada (evita inyeccion SQL)
+            String sql = "SELECT nombre, edad FROM Empleados WHERE edad BETWEEN ? AND ?";
             pst = con.prepareStatement(sql);
-             
-            System.out.printf("Introduce la edad minima: ");
+            
+            // 3. Pedir al usuario los limites de edad
+            System.out.print("Introduce la edad minima: ");
             int edadMin = sc.nextInt();
-            System.out.printf("Introduce la edad maxima: ");
+            System.out.print("Introduce la edad maxima: ");
             int edadMax = sc.nextInt();
+
+            // 4. Sustituir parametros en la consulta
             pst.setInt(1, edadMin);
             pst.setInt(2, edadMax);
             
+            // 5. Ejecutar la consulta
             rs = pst.executeQuery();
             
-            while(rs.next()){
+            // 6. Recorrer y mostrar resultados
+            while (rs.next()) {
                 String nombre = rs.getString("nombre");
-                int edad = rs.getInt("edad");
-                System.out.println("Nombre:" + nombre + ", Edad: " + edad);
-                System.out.println();
+                int    edad   = rs.getInt("edad");
+                System.out.println("Nombre: " + nombre + ", Edad: " + edad);
             }
-        }catch(SQLException ex){
-            System.out.println("Error: " + ex.getMessage() );
-        }
-        
-    }
-    
-}
 
+            // Cierre de recursos
+            rs.close();
+            pst.close();
+            con.close();
+        } catch (SQLException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
+
+        // Cerrar el scanner
+        sc.close();
+    }
+}

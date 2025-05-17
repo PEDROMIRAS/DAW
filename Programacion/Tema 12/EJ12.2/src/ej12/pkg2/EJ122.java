@@ -32,6 +32,11 @@ public class EJ122 {
         
         try{
             con = DriverManager.getConnection(url,user,password);
+            st = con.createStatement();
+            System.out.println("ID: ");
+            int id = sc.nextInt();
+            sc.nextLine();
+            
             System.out.print("Nombre: ");
             String nombre = sc.nextLine();
 
@@ -46,9 +51,9 @@ public class EJ122 {
             System.out.print("Curso: ");
             String curso = sc.nextLine();
 
-            String sql = "INSERT INTO Alumnos (nombre, fnac, media, curso) "
-                + "VALUES ('"+nombre+"','"+fnac+"',"+media+",'"+curso+"')";
-            st = con.createStatement();
+            String sql = "INSERT INTO Alumnos (num, nombre, fnac, media, curso) "
+                + "VALUES ("+id+",'"+nombre+"','"+fnac+"',"+media+",'"+curso+"')";
+            
             st.executeUpdate(sql);
             con.close();
         }catch(SQLException ex){
