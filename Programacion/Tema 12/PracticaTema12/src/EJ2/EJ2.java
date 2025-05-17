@@ -12,16 +12,10 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 /**
- * Ejercicio 2
+ * Ejercicio 2 
  * Muestra un listado con el nombre y la edad de los empleados cuya edad se 
- * encuentra comprendida entre un valor maximo y un valor minimo, introducidos 
+ * encuentra comprendida entre un valor máximo y un valor mínimo, introducidos 
  * por el usuario.
- * 
- * Pasos principales:
- * 1. Solicitar edad minima y maxima.
- * 2. Conectarse a la base de datos y preparar la consulta parametrizada.
- * 3. Ejecutar la consulta y mostrar los resultados.
- * 4. Manejar excepciones y cerrar recursos.
  */
 
 /**
@@ -40,9 +34,9 @@ public class EJ2 {
         String url  = "jdbc:mysql://localhost:3306/Empresa";
 
         // Objetos JDBC
-        Connection        con; // Conexión a la BD
+        Connection con; // Conexion a la BD
         PreparedStatement pst; // Sentencia preparada
-        ResultSet         rs;  // Resultado de la consulta
+        ResultSet rs;  // Resultado de la consulta
 
         // Scanner para entrada de datos
         Scanner sc = new Scanner(System.in);
@@ -71,7 +65,7 @@ public class EJ2 {
             // 6. Recorrer y mostrar resultados
             while (rs.next()) {
                 String nombre = rs.getString("nombre");
-                int    edad   = rs.getInt("edad");
+                int edad = rs.getInt("edad");
                 System.out.println("Nombre: " + nombre + ", Edad: " + edad);
             }
 
