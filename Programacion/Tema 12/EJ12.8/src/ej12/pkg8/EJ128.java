@@ -1,40 +1,54 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package ej12.pkg8;
+
 /***
  * Ejercicio 8
- * Diseñar una aplicación que muestre un informe de los alumnos, según sus 
- * notas: todos los alumnos cuya nota es Bien (nota entre 6 y 7) y todos los 
- * alumnos cuya nota es Notable (entre 7 y 9). Cada informe debe ordenarse por 
- * la nota de forma ascendente.Para realizar esta actividad usaremos una consulta 
- * con parámetros y la reutilizaremos.
+ * Muestra dos informes ordenados ascendentemente por nota:
+ *   1. Alumnos con nota "Bien"  ??6 y <?7
+ *   2. Alumnos con nota "Notable" ??7 y <?9
+ * Se reutiliza la misma consulta parametrizada cambiando los rangos.
  */
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.PreparedStatement;
-import java.util.Scanner;
-/**
- *
- * @author pedromiras
- */
-public class EJ128 {
+import java.sql.*;
 
-    /**
-     * @param args the command line arguments
-     */
+public class EJ128 {
+    // Consulta parametrizada: límites inferior y superior
+    private static final String SQL =
+        "SELECT nombre, media " +
+        "FROM alumnos " +
+        "WHERE media >= ? AND media < ? " +
+        "ORDER BY media"; // ascendente
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         String usr = "root";
         String pswd = "";
-        String url = "jdbc:mysql://localhost:3306/Instituto";
-        Connection  con;
-        ResultSet rs;
-        PreparedStatement pst;
-        
+        String url  = "jdbc:mysql://localhost:3306/Instituto";
+
+        // Rangos y etiquetas
+        double[][] rangos   = { {6, 7}, {7, 9} };
+        String[]   etiquetas = { "Bien", "Notable" };
+
+        try (Connection con = DriverManager.getConnection(url, usr, pswd);
+             PreparedStatement pst = con.prepareStatement(SQL)) {
+
+            for (int i = 0; i < rangos.length; i++) {
+                double min = rangos[i][0];
+                double max = rangos[i][1];
+
+                pst.setDouble(1, min);
+                pst.setDouble(2, max);
+
+                try (ResultSet rs = pst.executeQuery()) {
+                    System.out.println("\n----Alumnos " + etiquetas[i] + " (" + min + " - " + max + ")----");
+                    while (rs.next()) {
+                        String nombre = rs.getString("nombre");
+                        double nota   = rs.getDouble("media");
+                        System.out.printf(nombre + "  " + nota);
+                        System.out.println("");
+                    }
+                }
+            }
+
+        } catch (SQLException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
     }
-    
 }
